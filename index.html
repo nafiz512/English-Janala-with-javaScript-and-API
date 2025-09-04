@@ -27,7 +27,109 @@
         <!-- style  -->
         <link rel="stylesheet" href="./Style/style.css" />
     </head>
-    <body class="poppins-regular">
-        <h2>ok working</h2>
+    <body class="font-poppins">
+        <header class="bg-slate-600">
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div
+                            tabindex="0"
+                            role="button"
+                            class="btn btn-ghost lg:hidden"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16"
+                                />
+                            </svg>
+                        </div>
+                        <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                        >
+                            <li>
+                                <a class=" " href=""
+                                    ><i class="fa-solid fa-circle-question"></i
+                                    >FAQ</a
+                                >
+                            </li>
+                            <li>
+                                <a class=" " href=""
+                                    ><i class="fa-solid fa-book-open-reader"></i
+                                    >Learn</a
+                                >
+                            </li>
+                            <li>
+                                <a class=" " href=""
+                                    ><i
+                                        class="fa-solid fa-right-from-bracket"
+                                    ></i
+                                    >Logout</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="flex items-center gap-1">
+                        <span class="text-lg font-bold">English</span>
+                        <img src="./assets/logo.png" alt="" />
+                        <span class="text-lg font-bold font-bangla"
+                            >জানালা</span
+                        >
+                    </a>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 space-x-4">
+                        <li>
+                            <a class="btn btn-outline btn-primary" href=""
+                                ><i class="fa-solid fa-circle-question"></i
+                                >FAQ</a
+                            >
+                        </li>
+                        <li>
+                            <a class="btn btn-outline btn-primary" href=""
+                                ><i class="fa-solid fa-book-open-reader"></i
+                                >Learn</a
+                            >
+                        </li>
+                        <li>
+                            <a class="btn btn-outline btn-primary" href=""
+                                ><i class="fa-solid fa-right-from-bracket"></i
+                                >Logout</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- English is Easy section  -->
+            <section
+                class="flex gap-20 justify-between items-center p-5 mx-auto w-11/12"
+            >
+                <div class="flex-1">
+                    <h3 class="font-bold text-5xl mb-8">
+                        <span class="text-[#00BCFF]">English</span>
+                        <span>is Easy!!</span>
+                    </h3>
+                    <p class="font-bangla">
+                        আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি
+                        নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive
+                        Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+                    </p>
+                </div>
+                <div class="flex-1">
+                    <img src="./assets/hero-student.png" alt="" srcset="" />
+                </div>
+            </section>
+        </main>
     </body>
 </html>
