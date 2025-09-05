@@ -13,8 +13,6 @@ let displayData = () => {
         lesson_container.innerHTML = "";
 
         data.forEach((lesson) => {
-            //console.log(lesson);
-
             let divlesson = document.createElement("div");
             divlesson.innerHTML = `<button onclick="loadLevelWord(${lesson.level_no},${lesson.id})" id="learn-${lesson.id}" class="btn btn-outline btn-primary">
                                 <i class="fa-solid fa-book-open-reader"></i>Learn-${lesson.level_no}
@@ -24,6 +22,7 @@ let displayData = () => {
     });
 };
 let loadLevelWord = (lessonId, btnId) => {
+    manageSpinner(true);
     let url = `https://openapi.programming-hero.com/api/level/${lessonId}`;
     let btn = document.querySelectorAll("#lesson_level-container button");
     btn.forEach((childbtn) => {
@@ -81,6 +80,7 @@ let loadLevelWord = (lessonId, btnId) => {
                         </div>
                     </div>`;
                 word.append(divWord);
+                manageSpinner(false);
             });
         } else {
             word.innerHTML = `<div
@@ -93,6 +93,7 @@ let loadLevelWord = (lessonId, btnId) => {
                     </p>
                     <h1 class="font-bold text-2xl">নেক্সট Lesson এ যান</h1>
                 </div>`;
+            manageSpinner(false);
         }
     });
 };
@@ -144,5 +145,19 @@ let showWordDetails = (id) => {
         my_modal_5.showModal();
     });
 };
+
+let manageSpinner = (status) => {
+    if (status) {
+        document.getElementById("spinnerSection").classList.remove("hidden");
+        document
+            .getElementById("lesson-word-container")
+            .classList.add("hidden");
+    } else {
+        document.getElementById("spinnerSection").classList.add("hidden");
+        document
+            .getElementById("lesson-word-container")
+            .classList.remove("hidden");
+    }
+};
+
 displayData();
-//
