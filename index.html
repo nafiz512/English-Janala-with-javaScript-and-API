@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="./Style/style.css" />
     </head>
     <body class="font-poppins">
+        <!-- <div class="gradient w-full h-full bg-transparents bg-[gradient]"></div> -->
         <header class="bg-slate-600">
             <div class="navbar bg-base-100 shadow-sm">
                 <div class="navbar-start">
@@ -225,6 +226,22 @@
                 </div>
             </section>
             <!-- word lesson section  -->
+            <section class="bg-slate-200 w-11/12 mx-auto rounded-3xl p-3">
+                <div
+                    id="word-select-msge"
+                    class="min-h-52 flex flex-col items-center justify-center gap-3"
+                >
+                    <p class="text-sm">আপনি এখনো কোন Lesson Select করেন নি</p>
+                    <h1 class="font-bold text-2xl">একটি Lesson Select করুন।</h1>
+                </div>
+
+                <div
+                    id="lesson-word-container"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+                ></div>
+            </section>
+            <!-- modal section  -->
+            <section id="modalSection"></section>
         </main>
         <footer></footer>
         <script src="./script.js"></script>

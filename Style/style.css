@@ -7,3 +7,15 @@
 .font-poppins {
     font-family: "Poppins", sans-serif;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+.btn-blue {
+    background-color: blue;
+    color: white;
+}
+.gradient {
+    background-color: #00000033;
+}
